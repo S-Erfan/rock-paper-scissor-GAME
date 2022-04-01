@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="main_wrapper">
+        <div class="button_wrapper">
+
+            <input type="radio" id="input1" name="inputs">
+            <label class="entry" for="input1" id="rock" onclick="rock()">
+                <div class="circle"></div>
+                <div class="entry-label">Rock</div>
+                <img src="https://img.icons8.com/color/48/000000/hand-rock.png"/>
+            </label>
+            
+            <input type="radio" id="input2" name="inputs">
+            <label class="entry" for="input2" id="paper" onclick="paper()">
+                <div class="circle"></div>
+                <div class="entry-label">Paper</div>
+                <img src="https://img.icons8.com/color/48/000000/hand.png"/>
+            </label>
+
+
+            <input type="radio" id="input3" name="inputs">
+            <label class="entry" for="input3" id="scissor" onclick="scissor()">
+                <div class="circle"></div>
+                <div class="entry-label">Scissor</div>
+                <img src="https://img.icons8.com/color/48/000000/hand-scissors--v1.png"/>
+            </label>
+            
+            <div class="highlight"></div>
+
+        </div>
+    </div>
+
+    <div class="game">
+        <div class="pc">
+            pc win:
+        </div>
+        <div class="user">
+            user win:
+        </div>
+        <br>
+        <br>
+        <p class="answer">
+            pc answer : 
+        </p>
+    </div>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
